@@ -1,0 +1,376 @@
+<style>
+  .animated-in { animation: appear 0.5s ease-in-out; } @keyframes appear { from
+  { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+  .card-body a{ text-decoration: none; } li{ list-style: none; } .sidenav {
+  height: 100%; width: 0; position: fixed; z-index: 1; left: 0;
+  background-color: #111; overflow-x: hidden; transition: 0.5s; padding-top:
+  60px; } .sidenav a { transition: 0.3s; } .danhmuc{ color: #fff !important; }
+  .sidenav a:hover { color: #f1f1f1; } .sidenav .closebtn { position: absolute;
+  top: 0; right: 25px; font-size: 36px; margin-left: 50px; } #main { transition:
+  margin-left .5s; padding: 16px; } @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;} .sidenav a {font-size: 18px;} }
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" id="close"><i
+            class="bx bxs-x-circle"
+          ></i></a>
+        <div>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle danhmuc"
+              id="navbarDropdownMenuLink-333"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >Danh mục áo
+            </a>
+            <div
+              class="dropdown-menu dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333"
+            >
+              <a class="dropdown-item clothe" href="/collectSort">áo sơ mi</a>
+              <a class="dropdown-item clothe" href="/collectSort">áo thun polo</a>
+              <a class="dropdown-item clothe" href="/collectSort">áo dài tay</a>
+            </div>
+          </li>
+        </div>
+        <div>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle danhmuc"
+              id="navbarDropdownMenuLink-333"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >Danh mục quần
+            </a>
+            <div
+              class="dropdown-menu dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333"
+            >
+              <a class="dropdown-item clothe" href="/collectSort">quần jeans</a>
+              <a class="dropdown-item clothe" href="/collectSort">quần thun</a>
+              <a class="dropdown-item clothe" href="/collectSort">quần sort </a>
+              <a class="dropdown-item clothe" href="/collectSort">quần dài</a>
+            </div>
+          </li>
+        </div>
+        <div>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle danhmuc"
+              id="navbarDropdownMenuLink-333"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >Phụ kiện
+            </a>
+            <div
+              class="dropdown-menu dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333"
+            >
+              <a class="dropdown-item clothe" href="">Túi xách</a>
+              <a class="dropdown-item clothe" href="">Thắt lưng</a>
+              <a class="dropdown-item clothe" href="">Ví</a>
+              <a class="dropdown-item clothe" href="">Gìay</a>
+            </div>
+          </li>
+        </div>
+        <div>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle danhmuc"
+              id="navbarDropdownMenuLink-333"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >Danh mục giá
+            </a>
+            <div
+              class="dropdown-menu dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333"
+            >
+              <a class="dropdown-item pricex" href="/collectSortPriceNam">Dưới
+                100.000đ</a>
+              <a
+                class="dropdown-item pricex"
+                href="/collectSortPriceNam"
+              >100.000đ-200.000đ</a>
+              <a
+                class="dropdown-item pricex"
+                href="/collectSortPriceNam"
+              >200.000đ-300.000đ</a>
+              <a class="dropdown-item pricex" href="/collectSortPriceNam">Trên
+                300.000đ</a>
+            </div>
+          </li>
+        </div>
+        <div>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle danhmuc"
+              id="navbarDropdownMenuLink-333"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >Danh mục màu
+            </a>
+            <div
+              class="dropdown-menu dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333"
+            >
+              <a class="dropdown-item color" href="/collectSortColor">red<button
+                  type="button"
+                  class="btn btn-danger btn-circle"
+                ></button></a>
+              <a
+                class="dropdown-item color"
+                href="/collectSortColor"
+              >blue<button
+                  type="button"
+                  class="btn btn-primary btn-circle"
+                ></button></a>
+              <a
+                class="dropdown-item color"
+                href="/collectSortColor"
+              >black<button
+                  type="button"
+                  class="btn btn-dark btn-circle"
+                ></button></a>
+              <a
+                class="dropdown-item color"
+                href="/collectSortColor"
+              >white<button
+                  type="button"
+                  class="btn btn-light btn-circle"
+                ></button></a>
+              <a
+                class="dropdown-item color"
+                href="/collectSortColor"
+              >green<button
+                  type="button"
+                  class="btn btn-success btn-circle"
+                ></button></a>
+              <a
+                class="dropdown-item color"
+                href="/collectSortColor"
+              >yellow<button
+                  type="button"
+                  class="btn btn-warning btn-circle"
+                ></button></a>
+              <a
+                class="dropdown-item color"
+                href="/collectSortColor"
+              >pink<button
+                  type="button"
+                  class="btn btn-secondary btn-circle"
+                ></button></a>
+            </div>
+          </li>
+        </div>
+      </div>
+
+      <div id="main">
+        <i class="bx bx-filter" style="cursor:pointer" id="open">Lọc</i>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="row d-flex justify-content-center">
+        {{#each courses}}
+          <div class="card mx-2 my-4 animated-in" style="width: 18rem;">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                ></li>
+                <li
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="../img/{{this.imga.img}}"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="../img/{{this.imgb.img}}"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="../img/{{this.imgc.img}}"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body text-center mx-auto">
+              <div class="cvp">
+                <span class="card-text">${{dola this.price}}</span>
+                <a
+                  href="/courses/{{this.slug}}"
+                  class="btn details px-auto"
+                >view details</a><br />
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+<p id="count">{{count}}</p>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<script src="/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script>
+
+<script>
+  $(document).ready(function() {
+    $('#footer').hide();
+    $('#count').hide();
+    var slCart =document.getElementById("count").innerText;
+    document.getElementById("slcart").innerText =slCart; 
+    $("#open").click(function() {
+      
+      document.getElementById("mySidenav").style.width = "15rem";
+      document.getElementById("main").style.marginLeft = "250px";
+    })
+
+    $("#close").click(function() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.body.style.backgroundColor = "white";
+    })
+
+    $(".clothe").click(function(){
+      var txt =this.innerText;
+      $.ajax({
+        type: "POST",
+        url:"/collect",
+        data:{
+          type: txt,
+          sex:"nam"
+        }
+      })
+    })
+    $(".color").click(function(){
+      var txt =this.innerText;
+      $.ajax({
+        type: "POST",
+        url:"/collectColor",
+        data:{
+          color: txt,
+          sex:"nam"
+        }
+      })
+    })
+
+    $(".pricex").click(function(){
+      var price =this.innerText;
+      if(price =="Dưới 100.000đ"){
+        price=100000;
+        $.ajax({
+          type: "POST",
+          url:"/collectPrice",
+          data:{
+            price: price,
+            sex:"nam"
+          }
+        })
+      }else if(price == "100.000đ-200.000đ"){
+        price=200000;
+        $.ajax({
+          type: "POST",
+          url:"/collectPrice",
+          data:{
+            price: price,
+            sex:"nam"
+          }
+        })
+      }else if(price == "200.000đ-300.000đ"){
+        price=300000;
+        $.ajax({
+          type: "POST",
+          url:"/collectPrice",
+          data:{
+            price: price,
+            sex:"nam"
+          }
+        })
+      }else{
+        price=301000;
+        $.ajax({
+          type: "POST",
+          url:"/collectPrice",
+          data:{
+            price: price,
+            sex:"nam"
+          }
+        })
+      }
+    })
+   
+    
+   
+  })
+</script>

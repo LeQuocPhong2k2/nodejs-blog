@@ -1,0 +1,88 @@
+<div class="mt-4 mb-4">
+  <h3>Sửa sản phẩm</h3>
+
+  <form method="POST" action="/courses/{{course._id}}?_method=PUT">
+     <div class="form-group">
+      <label for="name"class='bx bxs-edit-alt'>Name:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        value="{{course.name}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="price"class='bx bx-dollar'>Price:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="price"
+        name="price"
+        value="{{course.price}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="quantity"class='bx bxs-bar-chart-alt-2'>Quantity:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="quantity"
+        name="quantity"
+        value="{{course.quantity}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="imga" class='bx bx-image-add'>ImageA:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="imga"
+        name="imga{img}"
+        value="{{course.imga.img}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="imgb"class='bx bx-image-add'>ImageB:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="imgb"
+        name="imgb{img}"
+        value="{{course.imgb.img}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="imgc"class='bx bx-image-add'>ImageC:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="imgc"
+        name="imgc{img}"
+        value="{{course.imgc.img}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="material" class='bx bx-recycle'>Material:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="material"
+        name="material"
+        value="{{course.material}}"
+      />
+    </div>
+    <div class="form-group">
+      <label for="slug"class='bx bx-share-alt'>Slug:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="slug"
+        name="slug"
+        value="{{course.slug}}"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Update sản phẩm</button>
+  </form>
+</div>
+

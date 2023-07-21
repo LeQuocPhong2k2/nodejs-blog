@@ -1,0 +1,49 @@
+{
+    "name": "shop_clothes",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/app.js",
+    "scripts": {
+        "watch": "node-sass --watch src/resources/scss/ --output src/public/css/",
+        "start": "nodemon --inspect src/bin/www",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LeQuocPhong2k2/nodejs-blog.git"
+    },
+    "keywords": [
+        "blog"
+    ],
+    "author": "phongle",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LeQuocPhong2k2/nodejs-blog/issues"
+    },
+    "homepage": "https://github.com/LeQuocPhong2k2/nodejs-blog#readme",
+    "dependencies": {
+        "bootstrap-icons": "^1.9.1",
+        "cookie-parser": "^1.4.6",
+        "debug": "^4.3.4",
+        "express": "^4.18.1",
+        "express-handlebars": "^6.0.6",
+        "express-session": "^1.17.3",
+        "http": "^0.0.1-security",
+        "http-errors": "~1.6.3",
+        "jsonwebtoken": "^8.5.1",
+        "method-override": "^3.0.0",
+        "mongoose": "^6.4.3",
+        "mongoose-delete": "^0.5.4",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.18",
+        "path": "^0.12.7",
+        "store2": "^2.14.2",
+        "sweetalert": "^2.1.2"
+    },
+    "devDependencies": {
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "node-sass": "^7.0.1",
+        "prettier": "^2.7.1"
+    }
+}
